@@ -1,0 +1,19 @@
+# compiled objects and binaries
+*.o
+*.so
+*.out
+pso
+vaderSentiment
+testSort
+
+# OS junk
+.DS_Store
+._*
+__MACOSX/
+
+# editor/IDE
+.vscode/
+.ccls-cache/
+.cache/
+.replit
+.breakpoints
