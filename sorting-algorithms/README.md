@@ -1,20 +1,19 @@
 # Sorting Algorithms in C — with a Python Case Study
 
-Five classic sorting algorithms implemented from scratch in C, compiled into a shared
+5 classic sorting algorithms implemented from scratch in C, compiled into a shared
 library (`libmysort.so`), and benchmarked from Python for time and space complexity.
+Learned as an exercise for programming in C.
 
 ## What's here
-
-- **`mySort.c` / `mySort.h`** — Bubble, Insertion, Merge, Heap, and Counting sort,
+- **`mySort.c` / `mySort.h`**: Bubble, Insertion, Merge, Heap, and Counting sort,
   implemented from scratch in C.
-- **`main.c`** — a small C test harness that runs each algorithm against a sample array.
-- **`Makefile`** — builds `libmysort.so`, a shared library exposing the sort functions
+- **`main.c`**: a small C test harness that runs each algorithm against a sample array.
+- **`Makefile`**: builds `libmysort.so`, a shared library exposing the sort functions
   so they can be called directly from Python via `ctypes`.
-- **`mySort_test.ipynb`** — loads `libmysort.so`, times each algorithm against
+- **`mySort_test.ipynb`**: loads `libmysort.so`, times each algorithm against
   Python's built-in `sorted()` and `numpy.sort()`, and plots the results.
 
 ## Results
-
 Empirical CPU time to sort the same large array, compared against each algorithm's
 theoretical time/space complexity:
 
@@ -36,7 +35,6 @@ that range, not just `n`, so it doesn't generalize to arbitrary data the way the
 comparison-based sorts do.
 
 ## Running it
-
 ```bash
 make                                   # builds libmysort.so
 gcc -o testSort main.c -L. -lmysort    # compiles and links the C test harness
@@ -45,7 +43,3 @@ gcc -o testSort main.c -L. -lmysort    # compiles and links the C test harness
 
 To reproduce the benchmark, open `mySort_test.ipynb` in the same directory (it loads
 `libmysort.so` via `ctypes`).
-
----
-*Originally written for MECHTRON 2MP3 (Programming for Mechatronics), McMaster
-University, Fall 2024.*
