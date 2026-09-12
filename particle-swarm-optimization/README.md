@@ -11,14 +11,14 @@ chosen for their varied, deliberately difficult landscapes (many local minima, f
 regions, steep curving valleys) that stress different aspects of an optimizer.
 
 ## What's here
-- **`PSO.c` / `utility.h`** — the PSO algorithm itself: particle position/velocity
+- **`PSO.c` / `utility.h`**: the PSO algorithm itself: particle position/velocity
   updates, personal- and global-best tracking, a stagnation-triggered
   re-diversification step to help escape local minima, and an early-stopping
   precision threshold.
-- **`OF.c` / `OF_lib.h`** — the eight benchmark objective functions (not written by me).
-- **`main.c`** — a command line driver parsing the objective function name and PSO
+- **`OF.c` / `OF_lib.h`**: the eight benchmark objective functions (not written by me).
+- **`main.c`**: a command line driver parsing the objective function name and PSO
   parameters from `argv`, runs the optimizer, and prints the result.
-- **`Makefile`** — builds the `pso` executable.
+- **`Makefile`**: builds the `pso` executable.
 
 ## How it works
 
