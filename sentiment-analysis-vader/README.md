@@ -12,7 +12,7 @@ normalization.
   rules (negation, intensifiers, exclamation points, ALL CAPS) before normalizing
   to a compound score in [-1, 1].
 - **`utility.h`**: shared structures, constants, and function prototypes.
-- **`main.c`** — runs the scorer against a set of test sentences (the same examples
+- **`main.c`**: runs the scorer against a set of test sentences (the same examples
   used in the original VADER paper) and prints each compound score.
 - **`Makefile`**: builds the `vaderSentiment` executable.
 
