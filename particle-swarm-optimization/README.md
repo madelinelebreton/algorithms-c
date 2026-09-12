@@ -1,7 +1,7 @@
 # Particle Swarm Optimization in C
 
-A from-scratch C implementation of Particle Swarm Optimization (PSO) — a
-population-based metaheuristic that minimizes an objective function by simulating a
+A C implementation of Particle Swarm Optimization (PSO).
+Population-based framework to minimize an objective function by simulating a
 swarm of particles moving through the search space, each pulled toward its own best
 known position and the swarm's global best.
 
@@ -11,14 +11,12 @@ chosen for their varied, deliberately difficult landscapes (many local minima, f
 regions, steep curving valleys) that stress different aspects of an optimizer.
 
 ## What's here
-
 - **`PSO.c` / `utility.h`** — the PSO algorithm itself: particle position/velocity
   updates, personal- and global-best tracking, a stagnation-triggered
   re-diversification step to help escape local minima, and an early-stopping
   precision threshold.
-- **`OF.c` / `OF_lib.h`** — the eight benchmark objective functions. Provided as part
-  of the course assignment, not written by Madeline.
-- **`main.c`** — a command-line driver that parses the objective function name and PSO
+- **`OF.c` / `OF_lib.h`** — the eight benchmark objective functions (not written by me).
+- **`main.c`** — a command line driver parsing the objective function name and PSO
   parameters from `argv`, runs the optimizer, and prints the result.
 - **`Makefile`** — builds the `pso` executable.
 
@@ -38,7 +36,6 @@ particles are re-randomized to inject diversity and escape local minima. The sea
 stops early once the global best fitness is within a small tolerance of convergence.
 
 ## Results
-
 Optimal fitness and CPU time across the eight benchmark functions at 10 decision
 variables:
 
