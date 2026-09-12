@@ -66,6 +66,3 @@ make
 ./pso griewank 10 -50 50 500 1000
 ```
 
----
-*Originally written for MECHTRON 2MP3 (Programming for Mechatronics), McMaster
-University, Fall 2024.*
