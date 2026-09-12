@@ -6,7 +6,7 @@ swarm of particles moving through the search space, each pulled toward its own b
 known position and the swarm's global best.
 
 Tested against eight standard optimization benchmark functions: Griewank, Levy,
-Rastrigin, Rosenbrock, Schwefel, Dixon-Price, Michalewicz, and Styblinski-Tang —
+Rastrigin, Rosenbrock, Schwefel, Dixon-Price, Michalewicz, and Styblinski-Tang;
 chosen for their varied, deliberately difficult landscapes (many local minima, flat
 regions, steep curving valleys) that stress different aspects of an optimizer.
 
