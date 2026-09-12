@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # algorithms-c
 
 Three classic algorithms implemented from scratch in C: a sorting suite, a
@@ -29,3 +30,7 @@ the assignment brief in its own words instead.
 
 ---
 *Madeline LeBreton — [github.com/madelinelebreton](https://github.com/madelinelebreton)*
+=======
+# c-sorting-algorithms
+Implementation and benchmarking of classic sorting algorithms in C, with a shared C library accessed from Python.
+>>>>>>> 232e6fa89b582051479a438cf8d1e47ff655f3d1
