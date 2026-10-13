@@ -1,6 +1,6 @@
 # VADER Sentiment Analysis, Implemented from Scratch in C
 My implementation of [VADER](https://github.com/cjhutto/vaderSentiment)
-(Valence Aware Dictionary and sEntiment Reasoner) — a lexicon- and rule-based sentiment
+(Valence Aware Dictionary and sEntiment Reasoner): a lexicon and rule based sentiment
 analysis method. Rather than calling an existing sentiment analysis library, I
 parsed VADER's lexicon directly and reimplemented its scoring rules: intensifiers
 ("very"), negation ("not"), punctuation and capitalization boosts, and compound score
@@ -25,15 +25,19 @@ That score is then adjusted based on context:
   score.
 - **ALL CAPS** and **exclamation points** add an additional emphasis boost.
 
-The per-word scores are summed and normalized by the square root of the sum of
+The word scores are summed and normalized by the square root of the sum of
 squares, producing a compound score bounded between -1 (most negative) and +1 (most
 positive).
 
-##Running it
+## Build
+```
+gcc -o vaderSentiment vaderSentiment.c -lm
+```
+
+## Running it
 
 This implementation needs VADER's lexicon file, `vader_lexicon.txt`, in the working
-directory at runtime. It isn't included here since it's a third-party dataset:
-(MIT licensed) from the
+directory. Found here:
 [original VADER repo](https://github.com/cjhutto/vaderSentiment/blob/master/vaderSentiment/vader_lexicon.txt).
 
 ```bash
