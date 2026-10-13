@@ -1,4 +1,4 @@
-# Sorting Algorithms in C — with a Python Case Study
+# Sorting Algorithms in C with a Python Case Study
 
 5 classic sorting algorithms implemented from scratch in C, compiled into a shared
 library (`libmysort.so`), and benchmarked from Python for time and space complexity.
@@ -30,9 +30,9 @@ theoretical time/space complexity:
 Bubble and Insertion sort's O(n²) behaviour makes them impractical at scale. Merge and
 Heap sort perform comparably to each other, as expected from their shared O(n log n)
 complexity. Counting sort is fastest here because the test data is a narrow range of
-integers, which is exactly the case it's suited for — but its performance depends on
+integers, which is exactly the case it's suited for; but its performance depends on
 that range, not just `n`, so it doesn't generalize to arbitrary data the way the
-comparison-based sorts do.
+comparison based sorts do.
 
 ## Running it
 ```bash
